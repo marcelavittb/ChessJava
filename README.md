@@ -105,10 +105,8 @@ Contribuições são bem‑vindas! Se quiser ajudar:
 
 Sugestões de melhorias podem incluir:
 
-- Implementar detecção de xeque‑mate  
 - Animações ou visual mais elaborado para peças  
 - Modo de rede (jogar online)  
-- IA (jogador de computador)  
 - Melhor tratamento de eventos inválidos  
 
 ---
