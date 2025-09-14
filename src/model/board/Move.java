@@ -23,7 +23,12 @@ public class Move {
         this.enPassant = enPassant; this.promotion = promotion;
     }
 
-    // Construtor simplificado para a IA
+    // Construtor simplificado para a IA (sem flags de roque/en passant, mas com promoção)
+    public Move(Position from, Position to, Piece moved, Piece captured, Character promotion) {
+        this(from, to, moved, captured, false, false, false, promotion);
+    }
+
+    // Construtor simplificado para a IA (sem flags de roque/en passant e sem promoção)
     public Move(Position from, Position to, Piece moved, Piece captured) {
         this(from, to, moved, captured, false, false, false, null);
     }

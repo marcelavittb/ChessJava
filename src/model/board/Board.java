@@ -1,9 +1,9 @@
 // ========================= src/model/board/Board.java =========================
 package model.board;
 
-import model.pieces.Piece;
 import java.util.ArrayList;
 import java.util.List;
+import model.pieces.Piece;
 
 public class Board {
     private final Piece[][] grid = new Piece[8][8];

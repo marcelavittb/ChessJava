@@ -2,8 +2,8 @@
 package model.pieces;
 
 
-import model.board.*;
 import java.util.*;
+import model.board.*;
 
 
 public class King extends Piece {
