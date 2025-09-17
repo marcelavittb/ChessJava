@@ -49,7 +49,7 @@ public class ChessGUI extends JFrame {
 
         // Painel do tabuleiro
         boardPanel = new JPanel(new GridLayout(8, 8, 0, 0));
-        boardPanel.setBackground(Color.PINK);
+        boardPanel.setBackground(Color.BLACK);
 
         for (int r = 0; r < 8; r++) {
             for (int c = 0; c < 8; c++) {
@@ -70,7 +70,7 @@ public class ChessGUI extends JFrame {
 
         // Barra inferior
         status = new JLabel("Vez: Brancas");
-        status.setBorder(BorderFactory.createEmptyBorder(4, 8, 4, 8));
+        status.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
         resetButton = new JButton("Reiniciar Jogo");
         resetButton.addActionListener(e -> {
@@ -216,7 +216,7 @@ public class ChessGUI extends JFrame {
         for (int r = 0; r < 8; r++) {
             for (int c = 0; c < 8; c++) {
                 boolean light = (r + c) % 2 == 0;
-                Color base = light ? new Color(240, 217, 181) : new Color(181, 136, 99);
+                Color base = light ? new Color(177, 179, 178) : new Color(32, 168, 227);
                 JButton b = squares[r][c];
                 b.setBackground(base);
                 b.setBorder(null);
